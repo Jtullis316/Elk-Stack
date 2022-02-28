@@ -92,7 +92,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the filebeat-config and metricbeat-config files to /etc/ansible/files directory.
-- Update the config files to add 10.1.0.4 to "output.elasticsearch" "hosts" section and add 10.1.04 to "setup.kibana" "host" section
+- Update the config files to add the Elk Stack server's private IP address to "output.elasticsearch" "hosts" section and add 10.1.04 to "setup.kibana" "host" section
 - Update the hosts in the /etc/ansible/hosts file. Add the ip address of web-1 and web-2 to the "webservers" and create "Elk" under the ip addresses and put the ip address of the elk server under it.
 - Run the playbook, and navigate to the Elk virtual machine to check that the installation worked as expected.
 
