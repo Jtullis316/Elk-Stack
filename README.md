@@ -96,12 +96,12 @@ SSH into the control node and follow the steps below:
 - Update the hosts in the /etc/ansible/hosts file. Add the ip address of web-1 and web-2 to the "webservers" and create "Elk" under the ip addresses and put the ip address of the elk server under it.
 - Run the playbook, and navigate to the Elk virtual machine___ to check that the installation worked as expected.
 
-_Answer the following questions to fill in the blanks:_
+Answer the following questions to fill in the blanks:_
 - Which file is the playbook? Where do you copy it?_Filebeat.yml and Metricbeat.yml are the playbooks. You copy them to the /etc/ansible/roles directory.
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? You update the hosts file whicle usually can be found in /etc/ansible/hosts. You specify going into the hosts file and create "elk" and put the elk ip address under it. You will then have edit the elk playbook file and make sure for "hosts" its elk. For filebeat you would change the hosts in the playbook to webservers.
 - Which URL do you navigate to in order to check that the ELK server is running? http://[your.ELK-VM.External.IP]:5601/app/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 - ssh *your administration username*@jumpbox private ip address
 - sudo docker container list -a
 - sudo docker container start *containter name*
