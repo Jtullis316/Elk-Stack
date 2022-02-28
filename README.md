@@ -66,7 +66,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible?_It can work on multiple machines at the same time after you run the playbooks. 
 
 The playbook implements the following tasks:
-- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 - Install docker.io
 - Install python3.pip
 - Install Docker module
@@ -79,7 +79,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1 10.0.0.5, Web-2 10.0.06_
+- Web-1 10.0.0.5, Web-2 10.0.06
 
 We have installed the following Beats on these machines:
 - Filebeat and Metricbeat_
