@@ -82,7 +82,7 @@ This ELK server is configured to monitor the following machines:
 - Web-1 10.0.0.5, Web-2 10.0.06
 
 We have installed the following Beats on these machines:
-- Filebeat and Metricbeat_
+- Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat collects data from log events and ships them, an example is Winlogbeat that ships windows event logs. Metricbeat collects metric data from servers and ships them. 
