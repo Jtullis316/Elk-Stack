@@ -1,4 +1,4 @@
-  GNU nano 4.8                                                                                  metricbeat-playbook.yml                                                                                            ---
+---                                                                                       ---
 - name: Install metric beat
   hosts: webservers
   become: true
