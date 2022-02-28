@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![Elk Stack](https://github.com/Jtullis316/Elk-Stack/blob/main/Images/Elk%20Stack.jpg)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _playbook____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   - [Install Elk playbook](https://github.com/Jtullis316/Elk-Stack/blob/main/Playbooks/Install-Elk.yml)
   - [Filebeat Playbook](https://github.com/Jtullis316/Elk-Stack/blob/main/Playbooks/Filebeat.yml)
@@ -25,9 +25,9 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly _available, in addition to restricting access to the network.
-- What aspect of security do load balancers protect? It protects against DDOS attacks. What is the advantage of a jump box?_It is the starting point before you can start your tasks. You will have to start the jumpbox before you start or do any tasks first.
+- What aspect of security do load balancers protect? It protects against DDOS attacks. What is the advantage of a jump box? It is the starting point before you can start your tasks. You will have to start the jumpbox before you start or do any tasks first.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network_____ and system _configuration____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
 - What does Filebeat watch for? Watches log files from the virtual machines and used to collect files as from specific files.
 - What does Metricbeat record? It takes metrics from the operating system and from services that are running on the server.
 
