@@ -46,10 +46,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- (Whatever your personal IP address is for your personal computer)
+- (Your personal IP address is for your personal computer)
 
 Machines within the network can only be accessed logging in from the jumpbox machine via ssh.
-- Which machine did you allow to access your ELK VM? What was its IP address? Jumpbox and the address is 10.0.0.4
+- The Jumpbox allows you access to your ELK VM and the address is  IP address is 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -63,7 +63,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- What is the main advantage of automating configuration with Ansible?_It can work on multiple machines at the same time after you run the playbooks. 
+- The main advantage of automating configuration with Ansible is that it can work on multiple machines at the same time after you run the playbooks. 
 
 The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
@@ -99,9 +99,9 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to the Elk virtual machine to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
-- Which file is the playbook? Where do you copy it? Filebeat.yml and Metricbeat.yml are the playbooks. You copy them to the /etc/ansible/roles directory.
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? You update the hosts file whicle usually can be found in /etc/ansible/hosts. You specify going into the hosts file and create "elk" and put the elk ip address under it. You will then have edit the elk playbook file and make sure for "hosts" its elk. For filebeat you would change the hosts in the playbook to webservers.
-- Which URL do you navigate to in order to check that the ELK server is running? http://[your Elk VM IP address]:5601/app/kibana
+- Filebeat.yml and Metricbeat.yml are the files that are the playbooks. You copy them to the /etc/ansible/roles directory.
+- You update the hosts file whicle usually can be found in /etc/ansible/hosts to make Ansible run the playbook on a specific machine. To specify which machine you're going to host the Elk server on, you are going to go into the hosts file and create "elk" and put the elk ip address under it. You will then have edit the elk playbook file and make sure for "hosts" its elk. To install Filebeat you would change the hosts in the playbook to webservers.
+- In order to check that the ELK server is running, you will go to the url http://[your Elk VM IP address]:5601/app/kibana
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 - ssh *your administration username*@jumpbox private ip address
