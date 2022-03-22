@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Elk Stack](https://github.com/Jtullis316/Elk-Stack/blob/main/Images/Elk%20Stack.jpg)
+![Elk Stack](insert link)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -75,7 +75,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker ps](https://github.com/Jtullis316/Elk-Stack/blob/main/Images/Docker%20ps.png)
+![docker ps](Insert Link)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
