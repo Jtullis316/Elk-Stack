@@ -97,8 +97,6 @@ SSH into the control node and follow the steps below:
 - Update the config files to add the Elk Stack server's private IP address to "output.elasticsearch" "hosts" section and to "setup.kibana" "host" section
 - Update the hosts in the /etc/ansible/hosts file. Add the ip address of web-1 and web-2 to the "webservers" and create "Elk" under the ip addresses and put the ip address of the elk server under it.
 - Run the playbook, and navigate to the Elk virtual machine to check that the installation worked as expected.
-
-Answer the following questions to fill in the blanks:
 - Filebeat.yml and Metricbeat.yml are the files that are the playbooks. You copy them to the /etc/ansible/roles directory.
 - You update the hosts file whicle usually can be found in /etc/ansible/hosts to make Ansible run the playbook on a specific machine. To specify which machine you're going to host the Elk server on, you are going to go into the hosts file and create "elk" and put the elk ip address under it. You will then have edit the elk playbook file and make sure for "hosts" its elk. To install Filebeat you would change the hosts in the playbook to webservers.
 - In order to check that the ELK server is running, you will go to the url http://[your Elk VM IP address]:5601/app/kibana
