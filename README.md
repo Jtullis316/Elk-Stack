@@ -103,7 +103,7 @@ Answer the following questions to fill in the blanks:
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? You update the hosts file whicle usually can be found in /etc/ansible/hosts. You specify going into the hosts file and create "elk" and put the elk ip address under it. You will then have edit the elk playbook file and make sure for "hosts" its elk. For filebeat you would change the hosts in the playbook to webservers.
 - Which URL do you navigate to in order to check that the ELK server is running? http://[your Elk VM IP address]:5601/app/kibana
 
-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 - ssh *your administration username*@jumpbox private ip address
 - sudo docker container list -a
 - sudo docker container start *containter name*
