@@ -25,11 +25,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- What aspect of security do load balancers protect? It protects against DDOS attacks. What is the advantage of a jump box? It is the starting point before you can start your tasks. You will have to start the jumpbox before you start or do any tasks first.
+- The aspect of security the load balancers protect againsts is DDOS attacks. The advantage of a jump box is the starting point before you can start your tasks. You will have to start the jumpbox before you start or do any tasks first.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
-- What does Filebeat watch for? Watches log files from the virtual machines and used to collect files as from specific files.
-- What does Metricbeat record? It takes metrics from the operating system and from services that are running on the server.
+- Filebeat watches log files from the virtual machines and used to collect files as from specific files.
+- Metricbeat records the metrics from the operating system and from services that are running on the server.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table.
@@ -46,7 +46,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 209.169.102.88 (whatever your personal IP address is for your personal computer)
+- (Whatever your personal IP address is for your personal computer)
 
 Machines within the network can only be accessed logging in from the jumpbox machine via ssh.
 - Which machine did you allow to access your ELK VM? What was its IP address? Jumpbox and the address is 10.0.0.4
@@ -79,10 +79,12 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1 10.0.0.5, Web-2 10.0.06
+- Web-1 10.0.0.5 
+- Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
-- Filebeat and Metricbeat
+- Filebeat  
+- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat collects data from log events and ships them, an example is Winlogbeat that ships windows event logs. Metricbeat collects metric data from servers and ships them. 
