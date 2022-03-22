@@ -53,12 +53,12 @@ Machines within the network can only be accessed logging in from the jumpbox mac
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses  |
-|----------|---------------------|-----------------------|
-| Jump Box | Yes                 |     209.169.102.88    |
-| Web-1    | No                  |     10.0.0.4          |
-| Web-2    | No                  |     10.0.0.4          |
-| Elk      | Yes                 |209.169.102.88,10.0.0.4|
+| Name     | Publicly Accessible | Allowed IP Addresses     |
+|----------|---------------------|--------------------------|
+| Jump Box | Yes                 |     Public IP Address    |
+| Web-1    | No                  |     10.0.0.4             |
+| Web-2    | No                  |     10.0.0.4             |
+| Elk      | Yes                 |Public IP Address,10.0.0.4|
 
 ### Elk Configuration
 
