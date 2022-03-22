@@ -66,7 +66,6 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - The main advantage of automating configuration with Ansible is that it can work on multiple machines at the same time after you run the playbooks. 
 
 The playbook implements the following tasks:
-- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 - Install docker.io
 - Install python3.pip
 - Install Docker module
